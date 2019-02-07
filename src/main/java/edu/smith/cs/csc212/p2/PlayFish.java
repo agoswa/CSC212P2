@@ -19,11 +19,11 @@ public class PlayFish extends GFX {
 	/**
 	 * Game size (visual). Try changing this to 600.
 	 */
-	public static int VISUAL_GRID_SIZE = 600;
+	public static int VISUAL_GRID_SIZE = 500;
 	/**
 	 * Game size (logical).
 	 */
-	public static int LOGICAL_GRID_SIZE = 20;
+	public static int LOGICAL_GRID_SIZE = 15;
 	/**
 	 * The words appear in the top part of the screen.
 	 */
@@ -31,7 +31,7 @@ public class PlayFish extends GFX {
 	/**
 	 * There's a border to make it look pretty (the board is inset by this much).
 	 */
-	public static int BORDER = 5;
+	public static int BORDER = 10;
 	/**
 	 * This is where the game logic lives.
 	 */

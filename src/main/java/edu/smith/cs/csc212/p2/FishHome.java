@@ -42,7 +42,6 @@ public class FishHome extends WorldObject {
 	}
 	
 
-
 	@Override
 	public void draw(Graphics2D g) {
 		Graphics2D scale = (Graphics2D) g.create();
@@ -58,5 +57,4 @@ public class FishHome extends WorldObject {
 	public void step() {
 		// Fish home doesn't move, does it?
 	}
-
 }

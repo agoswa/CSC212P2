@@ -11,36 +11,26 @@ import java.util.concurrent.ThreadLocalRandom;
  *
  */
 public class FishGame {
-	/**
-	 * This is the world in which the fish are missing. (It's mostly a List!).
-	 */
+	
+	//This is the world in which the fish are missing. (It's mostly a List!).
 	World world;
-	/**
-	 * The player (a Fish.COLORS[0]-colored fish) goes seeking their friends.
-	 */
+	
+	//The player (a Fish.COLORS[0]-colored fish) goes seeking their friends.
 	Fish player;
-	/**
-	 * The home location.
-	 */
+	
+	//The home location.
 	FishHome home;
-	/**
-	 * These are the missing fish!
-	 */
+	
+	//These are the missing fish!
 	List<Fish> missing;
 	
-	/**
-	 * These are fish we've found!
-	 */
+	//These are fish we've found!
 	List<Fish> found;
 	
-	/**
-	 * Number of steps!
-	 */
+	//Number of steps!
 	int stepsTaken;
 	
-	/**
-	 * Score!
-	 */
+	//Score!
 	int score;
 	
 	/**
@@ -133,15 +123,14 @@ public class FishGame {
 		world.stepAll();
 	}
 	
-	/**
-	 * Call moveRandomly() on all of the missing fish to make them seem alive.
-	 */
 	private void wanderMissingFish() {
 		Random rand = ThreadLocalRandom.current();
+		
 		for (Fish lost : missing) {
 			// 30% of the time, lost fish move randomly.
 			if (rand.nextDouble() < 0.3) {
-				// TODO(lab): What goes here?
+				lost.moveRandomly();
+				
 			}
 		}
 	}
